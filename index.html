@@ -9,13 +9,66 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
   />
 
   <style>
+
+
+body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .testimonials {
+      padding: 60px 20px;
+      /* background-color: #eafaf1; Light green tone */
+      text-align: center;
+    }
+
+    .testimonials h2 {
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .swiper {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .testimonial-card {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-card p {
+      font-size: 1.1em;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .stars {
+      color: gold;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .testimonial-card h4 {
+      margin-top: 10px;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .swiper-pagination-bullets {
+      bottom: -30px;
+    }
 
     .image-label-wrapper {
   position: relative;
@@ -166,7 +219,16 @@ body {
     </label>
   </div>
 
-  <header class="hero" id="home">
+  <!-- <header class="hero" id="home">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>NSOUTSOURCEINFOTECH</h1>
+    <p id="hero-text">Transforming Real Estate Visuals – Indoors, Outdoors & Beyond</p>
+    <a href="#services" class="btn">Explore Services</a>
+  </div>
+</header> -->
+
+<header class="hero" id="home">
   <div class="overlay"></div>
   <div class="hero-content" data-aos="fade-up">
     <h1>NSOUTSOURCEINFOTECH</h1>
@@ -174,6 +236,7 @@ body {
     <a href="#services" class="btn">Explore Services</a>
   </div>
 </header>
+
 
 
   <section class="about" id="about">
@@ -261,16 +324,15 @@ body {
       <p>Transform daylight images into warm, glowing twilight scenes.</p>
     </div>
     <div class="card" data-aos="zoom-in">
-  <i class="fas fa-eraser"></i>
-  <h3>Object Removal & HDR Stacking</h3>
-  <p>Remove unwanted objects, apply HDR effects, and blend stacked images for stunning results.</p>
-  </div>
-   <div class="card" data-aos="zoom-in">
-  <i class="fas fa-shopping-cart"></i>
-  <h3>Online Shopping Image Editing</h3>
-  <p>Professional editing for eCommerce platforms like Amazon & Flipkart – clean, clear, and high-converting product visuals.</p>
-</div>
-
+      <i class="fas fa-eraser"></i>
+      <h3>Object Removal & HDR Stacking</h3>
+      <p>Remove unwanted objects, apply HDR effects, and blend stacked images for stunning results.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-shopping-cart"></i>
+      <h3>Online Shopping Image Editing</h3>
+      <p>Professional editing for eCommerce platforms like Amazon & Flipkart – clean, clear, and high-converting product visuals.</p>
+    </div>
   </div>
 </section>
 
@@ -369,6 +431,18 @@ body {
           <p>"Transformed our property photos with 3D floor plans and flawless image edits. Fantastic job!"</p>
           <div class="stars">★★★★★</div>
           <h4>- Prime Estate Developers</h4>
+        </div>
+
+      <div class="swiper-slide testimonial-card">
+          <p>"Absolutely top-notch quality and timely delivery. Highly recommended!"</p>
+          <div class="stars">★★★★★</div>
+          <h4>- Sarah Realty Group</h4>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <p>"Quick turnaround and amazing image enhancements — truly boosted our sales!"</p>
+          <div class="stars">★★★★★</div>
+          <h4>- Urban Nest Realtors</h4>
         </div>
 
       </div>
