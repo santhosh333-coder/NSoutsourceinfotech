@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NSOUTSOURCEINFOTECH | Real Estate Services</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+
+  <style>
+
+    .image-label-wrapper {
+  position: relative;
+}
+
+.image-label {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(46, 125, 50, 0.9); /* semi-transparent green */
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("sample_image(12).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  padding: 20px;
+}
+
+body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .portfolio {
+      padding: 60px 20px;
+      /* background-color: #007BFF; Light green tone for company */
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .swiper {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s ease;
+    }
+
+    .swiper-slide img:hover {
+      transform: scale(1.03);
+    }
+
+    .swiper-pagination {
+      margin-top: 20px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .portfolio {
+      padding: 60px 20px;
+      /* background-color: #eafaf1; */
+      text-align: center;
+    }
+
+    .portfolio h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #2c3e50;
+    }
+
+    .swiper {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .swiper-slide img:hover {
+      transform: scale(1.03);
+    }
+
+    .swiper-pagination {
+      margin-top: 20px;
+    }
+</style>
+
+</head>
+<body>
+  <!-- Dark Mode Toggle -->
+  <div class="dark-mode-toggle">
+    <label>
+      <input type="checkbox" id="darkToggle"> Dark Mode
+    </label>
+  </div>
+
+  <header class="hero" id="home">
+  <div class="overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h1>NSOUTSOURCEINFOTECH</h1>
+    <p id="hero-text">Transforming Real Estate Visuals – Indoors, Outdoors & Beyond</p>
+    <a href="#services" class="btn">Explore Services</a>
+  </div>
+</header>
+
+
+  <section class="about" id="about">
+  <h2 data-aos="fade-down">Why Choose Us?</h2>
+  <div class="about-grid" data-aos="fade-up">
+    <div class="about-box">
+      <i class="fas fa-clock"></i>
+      <h3>Quick Turnaround</h3>
+      <p>Delivery within 24-48 hours for all projects, without compromising on quality.</p>
+    </div>
+    <div class="about-box">
+      <i class="fas fa-dollar-sign"></i>
+      <h3>Affordable Pricing</h3>
+      <p>Our services start from just $1 per image. Transparent and client-friendly pricing.</p>
+    </div>
+    <div class="about-box">
+      <i class="fas fa-thumbs-up"></i>
+      <h3>Client Satisfaction</h3>
+      <p>Rated highly for consistency, professionalism, and creative editing results.</p>
+    </div>
+    <div class="about-box">
+      <i class="fas fa-magic"></i>
+      <h3>Expert Retouching</h3>
+      <p>We specialize in object removal, sky replacement, lighting corrections, and color enhancements.</p>
+    </div>
+    <div class="about-box">
+      <i class="fas fa-users"></i>
+      <h3>Experienced Team</h3>
+      <p>Our skilled editors have years of experience in real estate photo editing, 2D & 3D floor plans, and more.</p>
+    </div>
+    <div class="about-box">
+      <i class="fas fa-globe"></i>
+      <h3>Worldwide Service</h3>
+      <p>Trusted by realtors and agencies globally. We deliver consistently, no matter where you are.</p>
+    </div>
+    <div class="about-box">
+      <i class="fas fa-check-circle"></i>
+      <h3>On-Time Delivery</h3>
+      <p>We promise punctual project delivery — every time. Your deadlines are our priority.</p>
+    </div>
+    <div class="about-box">
+      <i class="fas fa-headset"></i>
+      <h3>24/7 Support</h3>
+      <p>Have questions or need revisions? Our team is available round the clock to assist you.</p>
+    </div>
+  </div>
+</section>
+
+  <section id="services" class="services">
+  <h2 data-aos="fade-right">Our Services</h2>
+  <div class="service-grid">
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-home"></i>
+      <h3>Indoor Image Editing</h3>
+      <p>Enhancing room lighting, object removal, HDR blending & more.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-tree"></i>
+      <h3>Outdoor Image Editing</h3>
+      <p>Sky replacement, grass greening, pool cleanups, and lawn perfection.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-drafting-compass"></i>
+      <h3>2D & 3D Floor Planning</h3>
+      <p>Accurate and detailed plans to visualize real estate layouts.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-brush"></i>
+      <h3>Image Retouching</h3>
+      <p>Remove blemishes, enhance details, and create stunning visuals.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-pencil-ruler"></i>
+      <h3>Virtual Staging</h3>
+      <p>Add furniture & decor digitally to bring empty spaces to life.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-crop-alt"></i>
+      <h3>Image Resizing & Cropping</h3>
+      <p>Optimized for web, listings, print & all digital platforms.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+      <i class="fas fa-sun"></i>
+      <h3>Day to Dusk Conversion</h3>
+      <p>Transform daylight images into warm, glowing twilight scenes.</p>
+    </div>
+    <div class="card" data-aos="zoom-in">
+  <i class="fas fa-eraser"></i>
+  <h3>Object Removal & HDR Stacking</h3>
+  <p>Remove unwanted objects, apply HDR effects, and blend stacked images for stunning results.</p>
+  </div>
+   <div class="card" data-aos="zoom-in">
+  <i class="fas fa-shopping-cart"></i>
+  <h3>Online Shopping Image Editing</h3>
+  <p>Professional editing for eCommerce platforms like Amazon & Flipkart – clean, clear, and high-converting product visuals.</p>
+</div>
+
+  </div>
+</section>
+
+  <section class="pricing" id="pricing">
+  <h2 data-aos="fade-left">Pricing</h2>
+  <div class="pricing-grid">
+    <div class="pricing-card" data-aos="fade-up">
+      <h3>Real Estate Image Editing</h3>
+      <p class="price"><strong>From $1 / image</strong></p>
+      <p>On-time delivery with professional quality guaranteed.</p>
+      <button class="learn-more" onclick="openModal('image')">Learn More</button>
+    </div>
+    <div class="pricing-card" data-aos="fade-up">
+      <h3>2D / 3D Floor Plans</h3>
+      <p class="price"><strong>From $5 / plan</strong></p>
+      <p>Clean architectural and interactive virtual floor layouts.</p>
+      <button class="learn-more" onclick="openModal('floor')">Learn More</button>
+    </div>
+    <div class="pricing-card" data-aos="fade-up">
+      <h3>eCommerce Product Editing</h3>
+      <p class="price"><strong>From $1.5 / image</strong></p>
+      <p>Background removal, shadow effects, and white background for platforms like Amazon & Flipkart.</p>
+      <button class="learn-more" onclick="openModal('ecom')">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+
+  <section class="portfolio" id="portfolio">
+    <h2>Our Gallery</h2>
+    <div class="swiper portfolioSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Add your real images here -->
+        <div class="swiper-slide"><img src="sample_1.png" alt="Villa Before"></div>
+        <div class="swiper-slide"><img src="sample_2.png" alt="Villa After"></div>
+        <!-- <div class="swiper-slide"><img src="before_after_2.jpg" alt="Kitchen Before"></div> -->
+        <div class="swiper-slide"><img src="sample_image(17).jpg" alt="Kitchen After"></div>
+        <div class="swiper-slide"><img src="floor_sample.png" alt="Floor Plan Before"></div>
+        <div class="swiper-slide"><img src="floor.gif" alt="Floor Plan After"></div>
+        <div class="swiper-slide"><img src="sample_image(2).jpg" alt="Kitchen After"></div>
+        <div class="swiper-slide"><img src="sample_image(3).jpg" alt="Kitchen After"></div>
+        <div class="swiper-slide"><img src="sample_image(4).jpg" alt="Kitchen After"></div>
+        <div class="swiper-slide"><img src="sample_image(5).jpg" alt="Kitchen After"></div>
+        <div class="swiper-slide"><img src="sample_image(6).jpg" alt="Kitchen After"></div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide testimonial-card">
+          <p>"Absolutely top-notch quality and timely delivery. Highly recommended!"</p>
+          <div class="stars">★★★★★</div>
+          <h4>- Sarah Realty Group</h4>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <p>"They brought our listings to life with stunning visuals. Worth every dollar!"</p>
+          <div class="stars">★★★★★</div>
+          <h4>- Elite Homes Pvt. Ltd.</h4>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <p>"Exceptional attention to detail and outstanding customer service throughout the project."</p>
+          <div class="stars">★★★★☆</div>
+          <h4>- Landmark Properties</h4>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <p>"Quick turnaround and amazing image enhancements — truly boosted our sales!"</p>
+          <div class="stars">★★★★★</div>
+          <h4>- Urban Nest Realtors</h4>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <p>"Professional, reliable, and skilled. Our go-to for all real estate image editing needs."</p>
+          <div class="stars">★★★★☆</div>
+          <h4>- Summit Realty Solutions</h4>
+        </div>
+
+        <div class="swiper-slide testimonial-card">
+          <p>"Transformed our property photos with 3D floor plans and flawless image edits. Fantastic job!"</p>
+          <div class="stars">★★★★★</div>
+          <h4>- Prime Estate Developers</h4>
+        </div>
+
+      </div>
+
+      <!-- Optional Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+<section class="contact" id="contact">
+  <h2 data-aos="fade-up">Reach Us</h2>
+  <form id="contactForm" action="#" method="POST" data-aos="zoom-in">
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="contact-info" data-aos="fade-in">
+    <p><i class="fas fa-envelope"></i> Email: nsoutsourceinfotechslm@gmail.com</p>
+    <p><i class="fas fa-phone"></i> Phone: +91-94880-33520</p>
+  </div>
+</section>
+
+<!-- Toast Message -->
+<div id="toast" class="toast">Thank you! We'll get back to you soon.</div>
+
+<!-- Confetti Canvas -->
+<canvas id="confetti-canvas"></canvas>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NSOUTSOURCEINFOTECH. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>
+    AOS.init();
+    const swiper = new Swiper(".mySwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+    
+const swiper1 = new Swiper(".portfolioSwiper", {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      // Enable touch/swipe
+      grabCursor: true,
+    });
+
+
+  </script>
+</body>
+</html>
